@@ -628,3 +628,218 @@ td, th {
     display: none;
   }
 }
+
+
+
+
+.card-img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+
+
+
+
+.livrables-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.livrable-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+}
+
+.livrable-preview {
+  height: 260px;
+  background: #f6f7fb;
+  border-bottom: 1px solid rgba(15, 23, 42, .08);
+  overflow: hidden;
+}
+
+.livrable-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.livrable-content {
+  padding: 1rem;
+}
+
+.livrable-content h3 {
+  margin-bottom: .4rem;
+}
+
+.livrable-content p {
+  font-size: .95rem;
+  color: #5f687a;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1100px) {
+  .livrables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .livrables-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-subtitle {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+@media (max-width: 900px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual img {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.comparison-card {
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, .08);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, .08);
+}
+
+.comparison-card--highlight {
+  border: 1px solid rgba(197, 155, 56, .45);
+  box-shadow: 0 20px 55px rgba(197, 155, 56, .14);
+}
+
+.comparison-card h3 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+@media (max-width: 1100px) {
+  .grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .grid-5 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- White buttons inside footer / dark sections ---------- */
+.site-footer .btn--secondary,
+.section--navy .btn--secondary {
+  background: #FFFFFF !important;
+  color: #1E2D4A !important;
+  border: 2px solid #1E2D4A !important;
+}
+
+.site-footer .btn--secondary:hover,
+.section--navy .btn--secondary:hover {
+  background: #1E2D4A !important;
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+}
+
+
+
+
+
+/* ---------- Yellow buttons text white ---------- */
+.site-footer .btn--primary,
+.section--navy .btn--primary {
+  color: #FFFFFF !important;
+}
+
+.site-footer .btn--primary:hover,
+.section--navy .btn--primary:hover {
+  color: #FFFFFF !important;
+}
+
+
+
+/* ---------- Header yellow button text white ---------- */
+.site-header .btn--primary {
+  color: #FFFFFF !important;
+}
+
+.site-header .btn--primary:hover {
+  color: #FFFFFF !important;
+}
