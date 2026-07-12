@@ -790,19 +790,6 @@ td, th {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---------- White buttons inside footer / dark sections ---------- */
 .site-footer .btn--secondary,
 .section--navy .btn--secondary {
@@ -817,9 +804,6 @@ td, th {
   color: #FFFFFF !important;
   border-color: #FFFFFF !important;
 }
-
-
-
 
 
 /* ---------- Yellow buttons text white ---------- */
@@ -842,4 +826,87 @@ td, th {
 
 .site-header .btn--primary:hover {
   color: #FFFFFF !important;
+}
+
+
+
+/* --- SCoped Styles: Only affects Audit Gratuit page --- */
+.hero--centered .container {
+    display: flex;
+    justify-content: center;
+}
+
+.hero--centered .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.hero--centered .hero-text {
+    max-width: 800px;
+}
+
+.hero--centered .btn-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero--centered .hero-image {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero--centered .hero-image img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: var(--shadow-lg);
+}
+
+
+
+
+
+
+
+
+/* --- EXPERTISES TECHNIQUES: DOMAIN IMAGES --- */
+.domain {
+    overflow: hidden; /* Ensures the card expands to fit the floating image */
+}
+
+.domain-img {
+    float: left;          /* Aligns the image to the left so text wraps around it */
+    width: 320px;         /* Much smaller width */
+    height: 220px;        /* Fixed height for consistency */
+    object-fit: cover;    /* Prevents the image from stretching */
+    border-radius: 6px;   /* Reduced border radius for sharper corners */
+    margin-right: 1.5rem; /* Space between the image and the text */
+    margin-bottom: 1rem;
+}
+
+/* Mobile Responsiveness: Stacks the image on top for smaller screens */
+@media (max-width: 768px) {
+    .domain-img {
+        float: none;
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 1.2rem;
+    }
+}
+
+
+/* --- Add space between domain cards --- */
+.domain {
+    margin-bottom: 2.5rem; /* Creates breathing room between each card */
+}
+
+/* Removes the extra space under the very last card in the section */
+.domain:last-child {
+    margin-bottom: 0; 
 }
